@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C76111CA25A0F0D2000A4080 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C76111C925A0F0D2000A4080 /* Realm */; };
+		C76111CC25A0F0D2000A4080 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C76111CB25A0F0D2000A4080 /* RealmSwift */; };
+		C76111D025A0F1DA000A4080 /* RealmPersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76111CF25A0F1DA000A4080 /* RealmPersistentController.swift */; };
+		C76111D425A0F2C3000A4080 /* ShoppingItemDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76111D325A0F2C3000A4080 /* ShoppingItemDB.swift */; };
+		C76111D725A0F3C0000A4080 /* ShoppingItemDBKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76111D625A0F3C0000A4080 /* ShoppingItemDBKeys.swift */; };
+		C76111DA25A0F47D000A4080 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76111D925A0F47D000A4080 /* ShoppingItem.swift */; };
+		C76111DD25A0F555000A4080 /* ShoppingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76111DC25A0F555000A4080 /* ShoppingStore.swift */; };
+		C76111E125A13098000A4080 /* ShoppingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76111E025A13098000A4080 /* ShoppingForm.swift */; };
+		C76111E525A13189000A4080 /* ShoppingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76111E425A13189000A4080 /* ShoppingFormView.swift */; };
 		C78A5BDD25A0EA0D0086E1FA /* realm_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78A5BDC25A0EA0D0086E1FA /* realm_swiftuiApp.swift */; };
 		C78A5BDF25A0EA0D0086E1FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78A5BDE25A0EA0D0086E1FA /* ContentView.swift */; };
 		C78A5BE125A0EA0E0086E1FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C78A5BE025A0EA0E0086E1FA /* Assets.xcassets */; };
@@ -14,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C76111CF25A0F1DA000A4080 /* RealmPersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPersistentController.swift; sourceTree = "<group>"; };
+		C76111D325A0F2C3000A4080 /* ShoppingItemDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemDB.swift; sourceTree = "<group>"; };
+		C76111D625A0F3C0000A4080 /* ShoppingItemDBKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemDBKeys.swift; sourceTree = "<group>"; };
+		C76111D925A0F47D000A4080 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		C76111DC25A0F555000A4080 /* ShoppingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingStore.swift; sourceTree = "<group>"; };
+		C76111E025A13098000A4080 /* ShoppingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingForm.swift; sourceTree = "<group>"; };
+		C76111E425A13189000A4080 /* ShoppingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingFormView.swift; sourceTree = "<group>"; };
 		C78A5BD925A0EA0D0086E1FA /* realm-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "realm-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78A5BDC25A0EA0D0086E1FA /* realm_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realm_swiftuiApp.swift; sourceTree = "<group>"; };
 		C78A5BDE25A0EA0D0086E1FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,12 +43,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76111CC25A0F0D2000A4080 /* RealmSwift in Frameworks */,
+				C76111CA25A0F0D2000A4080 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C76111CE25A0F1AD000A4080 /* RealmDB */ = {
+			isa = PBXGroup;
+			children = (
+				C76111CF25A0F1DA000A4080 /* RealmPersistentController.swift */,
+				C76111DC25A0F555000A4080 /* ShoppingStore.swift */,
+			);
+			path = RealmDB;
+			sourceTree = "<group>";
+		};
+		C76111D225A0F2AF000A4080 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C76111D325A0F2C3000A4080 /* ShoppingItemDB.swift */,
+				C76111D625A0F3C0000A4080 /* ShoppingItemDBKeys.swift */,
+				C76111D925A0F47D000A4080 /* ShoppingItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C76111DF25A13085000A4080 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C76111E025A13098000A4080 /* ShoppingForm.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C76111E325A13173000A4080 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C76111E425A13189000A4080 /* ShoppingFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C78A5BD025A0EA0C0086E1FA = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +105,10 @@
 		C78A5BDB25A0EA0D0086E1FA /* realm-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				C76111E325A13173000A4080 /* Views */,
+				C76111DF25A13085000A4080 /* ViewModels */,
+				C76111D225A0F2AF000A4080 /* Models */,
+				C76111CE25A0F1AD000A4080 /* RealmDB */,
 				C78A5BDC25A0EA0D0086E1FA /* realm_swiftuiApp.swift */,
 				C78A5BDE25A0EA0D0086E1FA /* ContentView.swift */,
 				C78A5BE025A0EA0E0086E1FA /* Assets.xcassets */,
@@ -85,6 +142,10 @@
 			dependencies = (
 			);
 			name = "realm-swiftui";
+			packageProductDependencies = (
+				C76111C925A0F0D2000A4080 /* Realm */,
+				C76111CB25A0F0D2000A4080 /* RealmSwift */,
+			);
 			productName = "realm-swiftui";
 			productReference = C78A5BD925A0EA0D0086E1FA /* realm-swiftui.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +173,9 @@
 				Base,
 			);
 			mainGroup = C78A5BD025A0EA0C0086E1FA;
+			packageReferences = (
+				C76111C825A0F0D2000A4080 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = C78A5BDA25A0EA0D0086E1FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +202,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76111DA25A0F47D000A4080 /* ShoppingItem.swift in Sources */,
+				C76111E125A13098000A4080 /* ShoppingForm.swift in Sources */,
+				C76111D425A0F2C3000A4080 /* ShoppingItemDB.swift in Sources */,
 				C78A5BDF25A0EA0D0086E1FA /* ContentView.swift in Sources */,
+				C76111DD25A0F555000A4080 /* ShoppingStore.swift in Sources */,
+				C76111E525A13189000A4080 /* ShoppingFormView.swift in Sources */,
 				C78A5BDD25A0EA0D0086E1FA /* realm_swiftuiApp.swift in Sources */,
+				C76111D025A0F1DA000A4080 /* RealmPersistentController.swift in Sources */,
+				C76111D725A0F3C0000A4080 /* ShoppingItemDBKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +399,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C76111C825A0F0D2000A4080 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C76111C925A0F0D2000A4080 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C76111C825A0F0D2000A4080 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		C76111CB25A0F0D2000A4080 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C76111C825A0F0D2000A4080 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C78A5BD125A0EA0C0086E1FA /* Project object */;
 }

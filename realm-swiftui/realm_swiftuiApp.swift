@@ -11,7 +11,7 @@ import SwiftUI
 struct realm_swiftuiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(ShoppingStore(realm: RealmPersistentController.startup()))
         }
     }
 }
